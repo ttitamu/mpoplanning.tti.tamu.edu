@@ -1,0 +1,127 @@
+
+/*----- utility nav -----*/
+
+
+#utilitynav {
+	width: 100%;
+	width: auto;
+	height: 17px;
+	margin-bottom: 85px;
+	padding: .15em 0;
+	background-color: #BABCBE;
+	font-size: .75em;
+}
+
+#utilitynav ul {
+	float: right;
+}
+
+#utilitynav ul li {
+	margin:0;
+	padding: 0 1em 0 0;
+	list-style: none;
+	display: inline;
+}
+
+#utilitynav ul li a {
+	color: #333333;
+	text-decoration: none;
+}
+
+#utilitynav ul li a:hover, #utilitynav ul li a:active {
+	color: #3B5E8B;
+	text-decoration: none;
+}
+
+
+/*----- main nav -----*/
+
+
+#mainnav {
+  width: 100%;
+	/*margin: 0;
+	padding: 0;*/
+	height: 20px;
+	background-color: #3B5E8B;
+	font-size: .9em;
+}
+
+#mainnav ul {
+	/*margin: 0;
+	padding:0;*/
+	/*width: 81%;*/
+	float: right;
+}
+#mainnav ul li {
+	float:left;
+  margin: 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	/*padding: 2px 0;*/
+	border-right: 1px dotted #f0861f;
+	list-style-type:none;
+}
+
+#mainnav ul li.last {
+	border-right:none;
+}
+
+#mainnav a {
+  padding: 0 1em;
+	display: block;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#mainnav ul li a:hover, #mainnav ul li a:focus, #mainnav ul li a:active {
+	color: #f0861f;
+	text-decoration: none;
+}
+
+
+
+/* .SFHOVERS HERE */
+
+div#mainnav ul li.sfhover ul {
+	left:auto; 
+	margin-left:-2px;
+}
+
+/* END .SFHOVERS  */
+
+
+
+/* dropdowns */
+div#mainnav li:hover>ul, div#mainnav li:focus>ul {
+	left: auto; 
+	margin-left:-1px;
+	border-left: 1px solid #f0861f;
+}
+
+#mainnav ul li ul {
+	position:absolute;
+	left:-999em;  
+	margin:2px 0 0 0;
+	width: 185px;
+	font-weight: normal;
+	background: #678CB1;
+	font-size: .8em;
+}
+
+#mainnav ul li ul li {
+  padding-top: 0;
+	padding-bottom: 0;
+	width:185px;
+	border:none;
+	/*margin: 0;
+	padding: 0;
+	float:none; 
+	
+	text-transform: none;
+	list-style-type:none;*/
+}
+
+#mainnav li li a { padding-top: 3px; padding-bottom: 3px; color:#FFF; background-color: #678CB1; }
+#mainnav li li a:hover { color:#FFF; background-color: #F0861F; }
+#mainnav li li a:focus { color:#FFF; background-color: #F0861F; }
+#mainnav li li a:active { color:#FFF; background-color: #F0861F; }

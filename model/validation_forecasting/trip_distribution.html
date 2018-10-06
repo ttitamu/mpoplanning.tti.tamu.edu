@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/sublevel.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>Trip Distribution: Model Validation and Forecasting: Model Development: MPO Planning Process</title>
+  <meta name="Description" content="Information about trip distribution." />
+  <meta name="Keywords" content="model, development, validation, trip, distribution" />
+  <!-- InstanceEndEditable -->
+  <meta name="author" content="State of Texas, Texas Transportation Institute" />
+
+<!--Include stylesheet -->
+  <link href="../../css/main.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/navbar.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/leftnav.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/basic.css" rel="stylesheet" type="text/css" />
+  
+<!--Include javascript -->
+    <!-- Related to audience drop-down navigation -->
+  <script type="text/javascript" src="../../scripts/sf.js"></script>
+ 
+
+ <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="header">
+      <div id="utilitynav">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../contact_us/index.html">Contact Us</a></li>
+          <li><a href="../../glossary.html">Glossary</a></li>
+        </ul>
+ 
+      </div><!-- end #utility-navbar -->
+      
+      <div id="banner">
+        <a href="../../index.html" title="MPO Planning Process, home"></a>
+      </div><!-- end #banner -->
+    
+      <div id="mainnav">
+        <ul>
+          <li><a href="../../about/index.html">About</a></li>
+          <li id="datanav"><a href="../../data/index.html">Data Development</a>
+            <ul>
+              <li><a href="../../data/initiation_coordination/index.html">Travel Demand Model Update Initiation and Data Coordination</a></li>
+              <li><a href="../../data/saturation_counts/index.html">Saturation Counts</a></li>
+              <li><a href="../../data/travel_surveys/index.html">Travel Surveys</a></li>
+              <li><a href="../../data/geo_databases/index.html">Geographic Databases</a></li>
+              <li><a href="../../data/demographics/index.html">Demographics</a></li>
+            </ul>
+          </li>
+          <li id="modelnav"><a href="../index.html">Model Development</a>
+            <ul>
+              <li><a href="index.html">Model Validation and Forecasting</a></li>
+              <li><a href="../application/index.html">Model Application</a></li>
+            </ul>
+          </li>
+          <li id="plannav"><a href="../../plan/index.html">Plan Development</a>
+            <ul>
+              <li><a href="../../plan/mtp/index.html">Metropolitan Transportation Plan</a></li>
+              <li><a href="../../plan/tip/index.html">Transportation Improvement Program</a></li>
+              <li><a href="../../plan/utp/index.html">Unified Transportation Program</a></li>
+              <li><a href="../../plan/upwp/index.html">Unified Planning Work Program</a></li>
+            </ul>
+          </li>
+          <li class="last"><a href="../../other/index.html">Other Activities/Information</a></li>
+        </ul>
+ 
+      </div><!-- end #mainnav -->
+    </div><!-- end #header -->
+    
+    <div id="content">
+     
+      <div id="column-left-sub">
+        <!-- InstanceBeginEditable name="LeftNav" -->    
+        <div id="model-cf">
+				<ul>
+				  <li><span id="navigation-header"><a href="../index.html">Model Development</a></span>
+					  <ul>
+							<li class="m-1"><a href="index.html">Model Validation and Forecasting</a><!--
+								<ul>
+									<li><a href="/model/calibration_forecasting/">Base Year Calibration</a></li>
+									<li><a href="/model/calibration_forecasting/">Forecasting</a></li>
+								</ul>
+							--></li>
+							<li class="m-2"><a href="../application/index.html">Model Application</a><!--
+								<ul>
+									<li><a href="/model/application/">Model Runs/<abbr title="quality assurance, quality control">QAQC</abbr> and Reports</a></li>
+									<li><a href="/model/application/">Technical Assistance</a></li>
+								</ul>
+							--></li>
+						</ul>
+				  </li>
+			  </ul>
+ 
+        </div>
+      <!-- InstanceEndEditable -->
+      </div>   
+				
+      <div id="column-right-sub">
+      
+      <!-- InstanceBeginEditable name="ContentArea" -->
+        
+      <h1>Trip Distribution Data Development</h1>
+      
+      <p>In addition to the productions and attractions by trip purpose from the trip generation model and zone-to-zone travel times (i.e. skims matrix), the trip distribution step also utilizes five other data:</p>
+      
+      <ul>
+        <li>Friction factors</li>
+        <li>Trip length frequency distribution curves</li>
+        <li>Zonal radii values</li>
+        <li>Equals records</li>
+        <li>Bias factors by trip purpose</li>
+      </ul>
+      
+      <p>A brief description of the five data sets follows:</p>
+      
+      <ul>
+        <li><p><em>Friction Factors</em> - Describe the impedance to travel based on spatial separation.</p></li>
+        <li><p><em>Trip Length Frequency Distribution</em> - This is the number of trips and percentages of trips occurring at each minute of separation for each trip purpose.  A trip length frequency distribution (TLFD) model is available as a part of the trip distribution model set.  Input needed for the ITLFDM (Improved Trip Length Frequency Distribution Model) includes an estimate of the mean trip length and the maximum trip length.</p></li>
+        <li><p><em>Zone Radii (Centroid Distance Parameter)</em> - Zonal radii values are required for every zone.  Radii value is the average distance in minutes of travel time for all centroid connectors from the center point of the zone centroid to the perimeter of the zone.</p></li>
+        <li><p><em>Equals Records</em> - Equals records are an aggregate list of zones grouped into larger geographic areas.</p></li>
+        <li><p><em>Bias Factors</em> - Bias factors are optional and used sparingly.  Certain social and economic factors other than travel time affect travel patterns within individual urban areas.  TPP develops these factors for specific trip purposes as needed based on data from survey results and gravity model results.</p></li>
+      </em>
+
+      
+      <!-- InstanceEndEditable -->
+      
+      </div>
+
+    </div><!-- end #content -->
+  
+    <div id="footer">
+      <ul>
+        <li class="first"><a href="../../copyright_privacy.html">Copyright/Privacy Policy</a></li>
+				<li><a href="../../contact_us/index.html">Contact the Webmaster</a></li>
+				<li><a href="../../plugins.html">Plug-ins</a></li>
+				<li><a href="http://www.texasonline.com/portal/tol">The State of Texas</a></li>
+				<li><a href="http://www.texashomelandsecurity.com/">Texas Homeland Security</a></li>
+				<li><a href="http://www.tsl.state.tx.us/trail/">Statewide Search (Trail)</a></li>
+        <li>&copy; 2010</li>
+      </ul>
+			
+    </div><!-- end #footer -->
+
+  </div><!-- end #container -->
+  
+</body>
+<!-- InstanceEnd --></html>

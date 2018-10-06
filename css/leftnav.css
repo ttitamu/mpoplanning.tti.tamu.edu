@@ -1,0 +1,120 @@
+/*----- left navigation -----*/
+
+#column-left-sub {
+	font-size: .9em;
+	float: left;
+	width: 170px;
+	background-color: #ebebeb;
+}
+
+#column-left-sub #navigation-header {
+	/*background-color: #7e9bbf;*/
+	display: block;
+	/*padding: 5px;
+	color: #FFFFFF;*/
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .85em;
+	letter-spacing: .1em;
+	text-align: center;
+}
+
+#column-left-sub ul {
+	list-style-type: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#column-left-sub ul li {
+	margin: 0;
+	border-bottom: 1px solid #DAD7D0;
+}
+
+#column-left-sub ul li ul li {
+	border-bottom: none;
+}
+
+
+
+/* Hide 2nd level links */
+#column-left-sub ul li ul li ul {
+	display: none;
+}
+
+/* Display hidden 2nd Level Links -- Data Section COMMENTED OUT FOR FUTURE USE */
+
+/*#column-left-sub #data-ic li.d-1 ul, #column-left-sub #data-sc li.d-2 ul,  #column-left-sub #data-ts li.d-3 ul, #column-left-sub #data-gd li.d-4 ul, #column-left-sub #data-d li.d-5 ul, */
+#column-left-sub #plan-mtp li.p-1 ul, #column-left-sub #plan-tip li.p-2 ul,  #column-left-sub #plan-utp li.p-3 ul, #column-left-sub #plan-upwp li.p-4 ul {
+	display: block;
+}
+
+
+
+/*-- Link Styles --*/
+
+#column-left-sub #navigation-header a, #column-left-sub #navigation-header a:link, #column-left-sub #navigation-header a:visited {
+	display: block;
+	background-color: #678CB1;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 5px;
+}
+
+#column-left-sub #navigation-header a:hover, #column-left-sub #navigation-header a:active  {
+	display: block;
+	/*color: #F0861F;*/
+	color: #FFFFFF;
+	background-color: #678CB1;
+	text-decoration: none;
+}
+
+
+#column-left-sub a, #column-left-sub a:link, #column-left-sub a:visited {
+	color: #3B5E8B;
+	text-decoration: none;
+}
+
+#column-left-sub a:hover, #column-left-sub a:active  {
+	/*color: #F0861F;*/
+	color: #FFFFFF;
+	background-color: #F0861F;
+	text-decoration: none;
+}
+
+/* 1st level links */
+
+#column-left-sub ul ul li a {
+	display: block;
+	padding: 5px;
+}
+
+#column-left-sub #data-ic ul li.d-1 a, #column-left-sub #data-sc ul li.d-2 a, #column-left-sub #data-ts ul li.d-3 a, #column-left-sub #data-gd ul li.d-4 a, #column-left-sub #data-d ul li.d-5 a, 
+#column-left-sub #model-cf ul li.m-1 a, #column-left-sub #model-a ul li.m-2 a, 
+#column-left-sub #plan-mtp ul li.p-1 a, #column-left-sub #plan-tip ul li.p-2 a, #column-left-sub #plan-utp ul li.p-3 a, #column-left-sub #plan-upwp ul li.p-4 a {
+	color: #F0861F;
+	color: #FFFFFF;
+	background-color: #F0861F;
+}
+
+/* 2nd level links -- Data Section COMMENTED OUT FOR FUTURE USE */
+
+/*#column-left-sub #data-ic ul ul li.d-1 ul li a, #column-left-sub #data-sc ul ul li.d-2 ul li a, #column-left-sub #data-ts ul ul li.d-3 ul li a, #column-left-sub #data-gd ul ul li.d-4 ul li a, #column-left-sub #data-d ul ul li.d-5 ul li a, */
+#column-left-sub #plan-mtp ul ul li.p-1 ul li a, #column-left-sub #plan-tip ul ul li.p-2 ul li a, #column-left-sub #plan-utp ul ul li.p-3 ul li a, #column-left-sub #plan-upwp ul ul li.p-4 ul li a {
+	font-size: .85em;
+	letter-spacing: .035em;
+	padding: 1px 15px 5px 15px;
+	background-image: url(../images/bullet2.gif);
+	background-position: 5px 6px;
+	background-repeat: no-repeat;
+	color: #3B5E8B;
+	background-color: #ebebeb;
+}
+
+/*#column-left-sub #data-ic ul ul li ul li a:hover, #column-left-sub #data-sc ul ul li ul li a:hover, #column-left-sub #data-ts ul ul li ul li a:hover, #column-left-sub #data-gd ul ul li ul li a:hover, #column-left-sub #data-d ul ul li ul li a:hover, */
+#column-left-sub #plan-mtp ul ul li ul li a:hover, #column-left-sub #plan-tip ul ul li ul li a:hover, #column-left-sub #plan-utp ul ul li ul li a:hover, #column-left-sub #plan-upwp ul ul li ul li a:hover {
+	background-image: url(../images/bullet2r.gif);
+	background-position: 5px 6px;
+	background-repeat: no-repeat;
+	color: #F0861F;
+}

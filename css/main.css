@@ -1,0 +1,147 @@
+
+
+#container {
+	width: 785px;
+	margin: 10px auto;
+	padding: 0;
+	border: 1px solid #333333;
+	background-color:#FFFFFF;
+}
+
+/*----- Header -----*/
+#header {
+	width: 100%;
+	height: 128px;
+	position: relative;
+	margin:  0 auto;
+	/*background-image: url(/images/banner.jpg);
+	background-position:center;
+	background-repeat: no-repeat;*/
+}
+
+#header ul, #header ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.hide span, .hide {
+	position:absolute;
+	left:-9999px;
+}
+
+#banner {
+  background-image: url(../images/banner_narrow.jpg);
+	background-position:center;
+	background-repeat: no-repeat;
+	top: 21px;
+	left: 0px;
+}
+
+#banner, #banner a {	
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 785px;
+	height: 85px;
+}
+
+/*----- utility/main navigation see navbar.css -----*/
+
+/*----- content area -----*/
+
+#content, #content-h {
+	margin-bottom: 1em;
+	padding: .8em 1em 0em 1em;
+	font-size: .9em;
+	clear: both;
+  overflow:auto;
+}
+
+#content-h {
+	margin: .8em 1em 1em 1em;
+	background-color:#ebebeb;
+}
+
+
+
+/*----- left navigation - see leftnav.css -----*/
+
+
+
+/*----- main content area -----*/
+
+#column-right-sub{
+	padding: 5px 10px;
+	float: right;
+	width: 555px;
+	background-color:#ebebeb;
+}
+
+#column-right-sub p{
+	line-height: 18px;
+}
+
+#column-right-sub a, #column-right-sub a:link, #column-right-sub a:active {
+	color: #103f76;	
+}
+
+
+
+
+/*.box-main {
+	background: #d9d7d0;
+	width: 310px;
+	padding: 15px 15px 0 15px;
+	margin: 0 0 15px 0;
+}
+
+.box-main ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.box-main li {
+	padding: 0 0 15px 0;
+}*/
+
+/*----- footer -----*/
+#footer {
+  height: 16px;
+	background-color: #BABCBE;;
+  padding: 2px 0;
+	margin: 0;
+	clear: both;
+}
+
+#footer ul {
+	font-size: 0.7em;
+	color: #333;
+	margin: 0;
+  padding: 0;
+}
+
+#footer ul li {
+	display: inline;
+	list-style: none;
+	padding-left: .5em;
+	padding-right: .5em;
+	border-left: 1px solid #333;
+}
+
+#footer ul li.first {
+	background-image: none;
+	padding-left: 1em;
+	border-left: none;
+}
+
+#footer ul a:link, #footer ul a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+#footer ul a:hover {
+  color: #3b5e8b;
+  text-decoration: none;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/sublevel.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>Trip Assignment: Model Validation and Forecasting: Model Development: MPO Planning Process</title>
+  <meta name="Description" content="Information about trip assignment." />
+  <meta name="Keywords" content="model, development, validation, trip, assignment" />
+  <!-- InstanceEndEditable -->
+  <meta name="author" content="State of Texas, Texas Transportation Institute" />
+
+<!--Include stylesheet -->
+  <link href="../../css/main.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/navbar.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/leftnav.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/basic.css" rel="stylesheet" type="text/css" />
+  
+<!--Include javascript -->
+    <!-- Related to audience drop-down navigation -->
+  <script type="text/javascript" src="../../scripts/sf.js"></script>
+ 
+
+ <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="header">
+      <div id="utilitynav">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../contact_us/index.html">Contact Us</a></li>
+          <li><a href="../../glossary.html">Glossary</a></li>
+        </ul>
+ 
+      </div><!-- end #utility-navbar -->
+      
+      <div id="banner">
+        <a href="../../index.html" title="MPO Planning Process, home"></a>
+      </div><!-- end #banner -->
+    
+      <div id="mainnav">
+        <ul>
+          <li><a href="../../about/index.html">About</a></li>
+          <li id="datanav"><a href="../../data/index.html">Data Development</a>
+            <ul>
+              <li><a href="../../data/initiation_coordination/index.html">Travel Demand Model Update Initiation and Data Coordination</a></li>
+              <li><a href="../../data/saturation_counts/index.html">Saturation Counts</a></li>
+              <li><a href="../../data/travel_surveys/index.html">Travel Surveys</a></li>
+              <li><a href="../../data/geo_databases/index.html">Geographic Databases</a></li>
+              <li><a href="../../data/demographics/index.html">Demographics</a></li>
+            </ul>
+          </li>
+          <li id="modelnav"><a href="../index.html">Model Development</a>
+            <ul>
+              <li><a href="index.html">Model Validation and Forecasting</a></li>
+              <li><a href="../application/index.html">Model Application</a></li>
+            </ul>
+          </li>
+          <li id="plannav"><a href="../../plan/index.html">Plan Development</a>
+            <ul>
+              <li><a href="../../plan/mtp/index.html">Metropolitan Transportation Plan</a></li>
+              <li><a href="../../plan/tip/index.html">Transportation Improvement Program</a></li>
+              <li><a href="../../plan/utp/index.html">Unified Transportation Program</a></li>
+              <li><a href="../../plan/upwp/index.html">Unified Planning Work Program</a></li>
+            </ul>
+          </li>
+          <li class="last"><a href="../../other/index.html">Other Activities/Information</a></li>
+        </ul>
+ 
+      </div><!-- end #mainnav -->
+    </div><!-- end #header -->
+    
+    <div id="content">
+     
+      <div id="column-left-sub">
+        <!-- InstanceBeginEditable name="LeftNav" -->    
+        <div id="model-cf">
+				<ul>
+				  <li><span id="navigation-header"><a href="../index.html">Model Development</a></span>
+					  <ul>
+							<li class="m-1"><a href="index.html">Model Validation and Forecasting</a><!--
+								<ul>
+									<li><a href="/model/calibration_forecasting/">Base Year Calibration</a></li>
+									<li><a href="/model/calibration_forecasting/">Forecasting</a></li>
+								</ul>
+							--></li>
+							<li class="m-2"><a href="../application/index.html">Model Application</a><!--
+								<ul>
+									<li><a href="/model/application/">Model Runs/<abbr title="quality assurance, quality control">QAQC</abbr> and Reports</a></li>
+									<li><a href="/model/application/">Technical Assistance</a></li>
+								</ul>
+							--></li>
+						</ul>
+				  </li>
+			  </ul>
+ 
+        </div>
+      <!-- InstanceEndEditable -->
+      </div>   
+				
+      <div id="column-right-sub">
+      
+      <!-- InstanceBeginEditable name="ContentArea" -->
+        
+      <h1>Trip Assignment</h1>
+      
+      <p>Trip assignment is the final step in the model development process designed to replicate base year regional travel patterns and system demand.  Using the final 24-hour trip matrix from trip distribution and the base year regional network, the trip assignment program loads trips onto the network's zone-to-zone minimum travel time paths for a specified number of iterations.  Following the first iteration, revised link travel times are calculated based on the ratio of the assigned volume to the link's capacity and the trip assignment program then re-loads the trips to the network based on the resultant updated minimum time paths.</p>
+      
+      <p>The equilibrium traffic assignment technique is used for the development and application of the trip assignment model.  Using a computer coded roadway network, the equilibrium traffic assignment loads trips along the minimum paths, calculates the delay caused by congestion and reloads the trips to the network based on the resultant updated minimum paths.  Ideally, the assignment model will achieve an equilibrium solution within a reasonable number of iterations or network loadings.  Equilibrium is reached when no travelers can improve their travel times by shifting to an alternative route.</p>
+      
+      <p>Once the assignment process is complete, determining the validity of the results is based on comparing final modeled traffic volumes to actual counts on each facility comprising the network.  The model's ability to match counts and vehicle miles of travel (<abbr>VMT</abbr>) is measured by various statistics.  Within reasonable limits and with some exceptions, a model is considered to be valid when the overall area-wide <abbr title="vehicle miles of travel">VMT</abbr> is within plus or minus five percent of counted <abbr title="vehicle miles of travel">VMT</abbr> (i.e. 95 to 105 percent).  Within sub-groupings or stratifications of facility type or area type, the acceptable difference is plus or minus 10 percent and for cutlines or screenlines, plus or minus 15 percent.  These standards are based upon the observation that individual traffic volumes can vary on a daily basis by as much as 15 percent.  Likewise, because the model is based on general trends of travel behavior and the counts themselves are collected over several months, there is a limit to the precision with which a model can match all of the counts.  The model cannot, and should not be expected to replicate each count on each roadway segment; traffic assignment models almost never precisely match sample counts for specific links along roadways.</p>
+
+      
+      <!-- InstanceEndEditable -->
+      
+      </div>
+
+    </div><!-- end #content -->
+  
+    <div id="footer">
+      <ul>
+        <li class="first"><a href="../../copyright_privacy.html">Copyright/Privacy Policy</a></li>
+				<li><a href="../../contact_us/index.html">Contact the Webmaster</a></li>
+				<li><a href="../../plugins.html">Plug-ins</a></li>
+				<li><a href="http://www.texasonline.com/portal/tol">The State of Texas</a></li>
+				<li><a href="http://www.texashomelandsecurity.com/">Texas Homeland Security</a></li>
+				<li><a href="http://www.tsl.state.tx.us/trail/">Statewide Search (Trail)</a></li>
+        <li>&copy; 2010</li>
+      </ul>
+			
+    </div><!-- end #footer -->
+
+  </div><!-- end #container -->
+  
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/sublevel.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>Trip Generation: Model Validation and Forecasting: Model Development: MPO Planning Process</title>
+  <meta name="Description" content="Information about trip generation." />
+  <meta name="Keywords" content="model, development, validation, trip, generation" />
+  <!-- InstanceEndEditable -->
+  <meta name="author" content="State of Texas, Texas Transportation Institute" />
+
+<!--Include stylesheet -->
+  <link href="../../css/main.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/navbar.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/leftnav.css" rel="stylesheet" type="text/css" />
+  <link href="../../css/basic.css" rel="stylesheet" type="text/css" />
+  
+<!--Include javascript -->
+    <!-- Related to audience drop-down navigation -->
+  <script type="text/javascript" src="../../scripts/sf.js"></script>
+ 
+
+ <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="header">
+      <div id="utilitynav">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../contact_us/index.html">Contact Us</a></li>
+          <li><a href="../../glossary.html">Glossary</a></li>
+        </ul>
+ 
+      </div><!-- end #utility-navbar -->
+      
+      <div id="banner">
+        <a href="../../index.html" title="MPO Planning Process, home"></a>
+      </div><!-- end #banner -->
+    
+      <div id="mainnav">
+        <ul>
+          <li><a href="../../about/index.html">About</a></li>
+          <li id="datanav"><a href="../../data/index.html">Data Development</a>
+            <ul>
+              <li><a href="../../data/initiation_coordination/index.html">Travel Demand Model Update Initiation and Data Coordination</a></li>
+              <li><a href="../../data/saturation_counts/index.html">Saturation Counts</a></li>
+              <li><a href="../../data/travel_surveys/index.html">Travel Surveys</a></li>
+              <li><a href="../../data/geo_databases/index.html">Geographic Databases</a></li>
+              <li><a href="../../data/demographics/index.html">Demographics</a></li>
+            </ul>
+          </li>
+          <li id="modelnav"><a href="../index.html">Model Development</a>
+            <ul>
+              <li><a href="index.html">Model Validation and Forecasting</a></li>
+              <li><a href="../application/index.html">Model Application</a></li>
+            </ul>
+          </li>
+          <li id="plannav"><a href="../../plan/index.html">Plan Development</a>
+            <ul>
+              <li><a href="../../plan/mtp/index.html">Metropolitan Transportation Plan</a></li>
+              <li><a href="../../plan/tip/index.html">Transportation Improvement Program</a></li>
+              <li><a href="../../plan/utp/index.html">Unified Transportation Program</a></li>
+              <li><a href="../../plan/upwp/index.html">Unified Planning Work Program</a></li>
+            </ul>
+          </li>
+          <li class="last"><a href="../../other/index.html">Other Activities/Information</a></li>
+        </ul>
+ 
+      </div><!-- end #mainnav -->
+    </div><!-- end #header -->
+    
+    <div id="content">
+     
+      <div id="column-left-sub">
+        <!-- InstanceBeginEditable name="LeftNav" -->    
+        <div id="model-cf">
+				<ul>
+				  <li><span id="navigation-header"><a href="../index.html">Model Development</a></span>
+					  <ul>
+							<li class="m-1"><a href="index.html">Model Validation and Forecasting</a><!--
+								<ul>
+									<li><a href="/model/calibration_forecasting/">Base Year Calibration</a></li>
+									<li><a href="/model/calibration_forecasting/">Forecasting</a></li>
+								</ul>
+							--></li>
+							<li class="m-2"><a href="../application/index.html">Model Application</a><!--
+								<ul>
+									<li><a href="/model/application/">Model Runs/<abbr title="quality assurance, quality control">QAQC</abbr> and Reports</a></li>
+									<li><a href="/model/application/">Technical Assistance</a></li>
+								</ul>
+							--></li>
+						</ul>
+				  </li>
+			  </ul>
+ 
+        </div>
+      <!-- InstanceEndEditable -->
+      </div>   
+				
+      <div id="column-right-sub">
+      
+      <!-- InstanceBeginEditable name="ContentArea" -->
+        
+      <h1>Trip Generation</h1>
+      
+      <p>The trip generation module used in the Texas package is <abbr>TRIPCAL5</abbr>. <abbr>TRIPCAL5</abbr> is a multifunctional program that estimates trip productions and attractions for up to ten trip purposes and 9,999 traffic analysis zones. This program includes features that allow input of user-specified data or use of default models for the disaggregation of data at the traffic analysis zone (<abbr>TAZ</abbr>) level. Program options include trip production models, trip attraction models, disaggregation models, multiple trip purposes, and user-selected data inputs.</p>
+      
+      <p>The sub-programs within <abbr>TRIPCAL5</abbr> are designed to use the socioeconomic data normally used in trip generation. The trip production models use estimates of the number of households stratified by household size and household income or auto ownership for each zone. Trip attraction models employ estimates of each zone's employment stratified by employment type and area type. The specific data elements recommended for running <abbr>TRIPCAL5</abbr> include population, number of households, median household income, and number of employees in the basic, service, and retail categories for each traffic analysis zone.</p>
+      
+      <h2>Trip Purposes</h2>
+      
+      <p>Up to 10 trip purposes may be used in <abbr>TRIPCAL5</abbr> with specific trip rates for each. Typical trip purposes include:</p>
+      
+      <ul>
+        <li>Home-Based Work</li>
+        <li>Home-Based School</li>
+        <li>Home-Based Shopping</li>
+        <li>Home-Based Other</li>
+        <li>Non-Home-Based Work</li>
+        <li>Non-Home-Based Other</li>
+        <li>Truck and Taxi, and</li>
+        <li>External-Local.</li>
+      </ul>
+      
+      <p>For most urban areas in Texas the following trip purposes are used:</p>
+      
+      <ul>
+        <li>Home-Based Work</li>
+        <li>Home-Based Non-Work</li>
+        <li>Non-Home-Based</li>
+        <li>Truck and Taxi, and</li>
+        <li>External Local</li>
+      </ul>
+      
+      <h2>Trip Productions</h2>
+      
+      <p>Three trip production models are included in <abbr>TRIPCAL5</abbr>:</p>
+      
+      <ul>
+        <li><p><em>Two-Way Cross-Classification Model</em>, which allows trip rates stratified for up to six categories for each independent variable</p></li>
+        <li><p><em>Three-Way Cross-Classification Model</em>, which allows trip rates to be stratified for up to six categories for two of the independent variables and up to four categories for the third independent variable, and</p></li>
+        <li><p><em>Linear Regression Model</em> with up to six independent variables.</p></li>
+      </ul>
+      
+      <p>The recommended trip production model is a Two-Way Cross-Classification Model with person trips (or auto-driver trips) per household cross-classified by up to six row categories and up to six column categories. Although the program is developed to allow the user to input any independent variables for the cross-classification model, the recommended independent variables are median household income and household size.</p>
+      
+      <h2>Trip Attractions</h2>
+      
+      <p>Five trip attraction models are available to estimate trip attractions:</p>
+      
+      <ul>
+        <li><p><em>Two-Way Cross-Classification Model</em> may be selected and attraction trip rates stratified for up to six categories for each independent variable.</p></li>
+        <li><p><em>Three-Way Cross-Classification Model</em> with trip rates stratified for up to six categories for two of the independent variables and up to four categories of the third independent variable.</p></li>
+        <li><p><em>Cross-Classification/Regression Model</em> with trip rates stratified for up to 24 generation areas by households and employment type.</p></li>
+        <li><p><em>Linear Regression Model</em> with up to six independent variables.</p></li>
+        <li><p><em>Two-Tier Regression Model</em> with six independent variables.</p></li>
+      </ul>
+      
+      <p>The recommended trip attraction model is a regression type cross-classification model for each trip purpose stratified for up to 24 generation areas. The recommended independent variables are employment and households.</p>
+      
+      <h2>Disaggregation Models</h2>
+      
+      <p>Disaggregation models in <abbr>TRIPCAL5</abbr> produce planning year estimates of the number of households classified by household size, household income, or auto ownership for each traffic analysis zone. These estimates are required in trip production. For any of these three variables (household size, household income, or auto ownership), the base year marginal distribution of each zone, a disaggregation curve for the urban area, or defaults built into the model may be used.</p>
+      
+      <h2>Special Generators</h2>
+      
+      <p>Trip production and trip attraction models are for average or usual conditions and development types. Certain developments, however, are considered unique and are considered special generators. For each identified special generator within an urban area, trip productions and attractions are considered separately using individual trip production and attraction rates for that generator. The special generator model input data are more detailed that the usual zone input data. Common special generators include:</p>
+      
+      <ul>
+        <li>Regional malls</li>
+        <li>Regional airports</li>
+        <li>Military bases</li>
+        <li>Colleges, universities, community colleges</li>
+        <li>Hospitals</li>
+        <li>Unique industrial sites</li>
+        <li>Major regional amusement parks, and</li>
+        <li>Major sports facilities</li>
+      </ul>
+      
+      <p>Additional information for that should be obtained for special generators includes the following:</p>
+      
+      <ul>
+        <li>Educational
+          <ul>
+            <li>Number of employees</li>
+            <li>Number of students</li>
+            <li>Number of students who live on campus (if college)</li>
+          </ul>
+        </li>
+        <li>Hospitals
+          <ul>
+            <li>Number of employees</li>
+            <li>Number of beds</li>
+          </ul>
+        </li>
+        <li>Airports
+          <ul>
+            <li>Number of employees</li>
+            <li>Number of deplaning passengers</li>
+          </ul>
+        </li>
+        <li>Military Bases
+          <ul>
+            <li>Number of military personnel</li>
+            <li>Number of civilian employment</li>
+            <li>Number of military personnel living on base</li>
+          </ul>
+        </li>
+        <li>Industrial Sites
+          <ul>
+            <li>Number of employees</li>
+          </ul>
+        </li>
+        <li>Regional Malls
+          <ul>
+            <li>Number of employees</li>
+          </ul>
+        </li>
+      </ul>
+      
+      <!-- InstanceEndEditable -->
+      
+      </div>
+
+    </div><!-- end #content -->
+  
+    <div id="footer">
+      <ul>
+        <li class="first"><a href="../../copyright_privacy.html">Copyright/Privacy Policy</a></li>
+				<li><a href="../../contact_us/index.html">Contact the Webmaster</a></li>
+				<li><a href="../../plugins.html">Plug-ins</a></li>
+				<li><a href="http://www.texasonline.com/portal/tol">The State of Texas</a></li>
+				<li><a href="http://www.texashomelandsecurity.com/">Texas Homeland Security</a></li>
+				<li><a href="http://www.tsl.state.tx.us/trail/">Statewide Search (Trail)</a></li>
+        <li>&copy; 2010</li>
+      </ul>
+			
+    </div><!-- end #footer -->
+
+  </div><!-- end #container -->
+  
+</body>
+<!-- InstanceEnd --></html>
